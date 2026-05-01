@@ -32,5 +32,48 @@ No table sharing or reassignment
 ✔ Better size matching    
 ✖ Less flexible    
 
+📂 Input Format    
+The program uses a CSV file:    
+arrival_time,group_size,dining_time    
+12.5,2,30    
+15.2,4,65    
+Fields:    
+arrival_time — time of arrival (minutes)    
+group_size — number of customers (1–6)    
+dining_time — duration of stay    
+
+Methodology    
+The system uses a discrete-time simulation:    
+Time progresses step-by-step (1 minute)    
+At each step:    
+Add new arrivals    
+Release finished tables    
+Update queues    
+Assign tables    
 
 
+Output Metrics    
+Total / served / unserved groups    
+Average waiting time    
+Maximum waiting time    
+Table utilization    
+Queue length over time    
+Waiting time by group size    
+
+Visualization    
+The GUI includes:    
+Bar chart comparison (Mode 1 vs Mode 2)    
+Queue length over time    
+Summary tables    
+All charts are generated dynamically from simulation results.    
+
+How to Run    
+Requirements    
+Python 3.x    
+Run the program    
+python restaurant_simulation.py    
+Steps    
+Load a CSV file    
+Adjust table configuration    
+Click Run Both Modes    
+View results and charts    
