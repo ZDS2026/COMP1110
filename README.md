@@ -16,10 +16,7 @@ Objectives
 Simulation Mode 1: Single Queue + Flexible Table Allocation    
 One common queue for all customers    
 First-Come-First-Served (FCFS)    
-Any suitable table can be used    
-
-✔ Flexible    
-✖ May cause seat waste    
+Any suitable table can be used
 
 Simulation Mode 2: Size-Based Queues + Dedicated Tables    
 Customers are divided into 3 queues:    
@@ -29,10 +26,7 @@ Customers are divided into 3 queues:
 Each queue is served only by its corresponding table type    
 No table sharing or reassignment    
 
-✔ Better size matching    
-✖ Less flexible    
-
-📂 Input Format    
+Input Format    
 The program uses a CSV file:    
 arrival_time,group_size,dining_time    
 12.5,2,30    
@@ -49,8 +43,7 @@ At each step:
 Add new arrivals    
 Release finished tables    
 Update queues    
-Assign tables    
-
+Assign tables
 
 Output Metrics    
 Total / served / unserved groups    
